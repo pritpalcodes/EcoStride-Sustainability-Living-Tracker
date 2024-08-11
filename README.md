@@ -1,8 +1,6 @@
-<div align="center">
-  <img src="https://github.com/shrivastavaditya/EcoStride-Sustainability-Living-Tracker/blob/main/front/public/images/EcoStride_logo(1).png" alt="EcoStride Logo" width="200">
-</div>
 
-# EcoStride: Sustainability Living Tracker 🌳🌍💚
+
+# 🖥️ CodeRaiders: Online Coding Platform
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white)](https://reactjs.org/)
@@ -11,74 +9,134 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=white)](https://firebase.google.com/)
 
-EcoStride is a revolutionary platform that seamlessly blends cutting-edge technology with real-life eco-consciousness. It empowers users to monitor their energy consumption, carbon footprint, water conservation, waste reduction, and engage in sustainable shopping across diverse categories like Clothing, Food, Travel, and more.
 
-## Overview 🌐
+**CodeRaiders** is a comprehensive online coding platform designed to empower developers of all skill levels. This platform offers a space to write and execute code, practice coding skills, and compete in coding contests.
 
-EcoStride aims to empower individuals to adopt sustainable lifestyles, contribute to an eco-friendly marketplace, and actively participate in global sustainable development goals. The platform offers a comprehensive suite of features to track personal carbon footprints, analyze energy efficiency, and facilitate sustainable shopping practices.
 
-## Features 🌟
 
-- **Individual Sustainability Tracker**: Users can track and analyze their eco-friendly practices across various aspects of daily life, including energy consumption, waste reduction, transportation, and food choices. 📊🔍
-- **Environmental Awareness**: EcoStride promotes sustainable living practices and raises awareness about environmental issues through educational resources and community engagement. 🌳🌎💡
-- **Goal Tracking and Reporting**: Users can set and achieve sustainability goals, track their progress, and receive personalized insights and recommendations. 🎯📈
-- **Eco-Friendly Marketplace**: Access a curated marketplace of sustainable products and services, enabling users to make informed and eco-conscious purchasing decisions. 🛒🌱
-- **Carbon Footprint Analysis**: Calculate and monitor individual carbon footprints, contributing to global efforts in reducing emissions and mitigating climate change. ☁️🌍
-- **Energy Efficiency Tracking**: Input information about appliances, track power consumption, and receive insights into the efficiency of devices to optimize energy usage. ⚡💻
-- **Appliance Database**: Access a comprehensive database of common appliances and their standard power ratings to assist in accurate energy consumption calculations. 📚🔋
+## ✨ Features
 
-## Getting Started 🚀
+### ⚔️ Coding Playground
+- Write, compile, and execute code in a user-friendly editor.
+- Support for at least one compiled language.
+- Real-time error feedback and performance metrics.
 
-To get started with EcoStride, follow these steps:
+### 🏋️‍♂️ Coding Arena
+- Practice with pre-existing coding problems or upload new problems.
+- Detailed problem descriptions, constraints, and test cases.
+- Solutions can be tested against multiple test cases.
+
+### 🎮 Coding Battleground
+- Participate in ongoing contests and view real-time leaderboards.
+- Create and host your own coding contests.
+
+## 🛠️ Project Structure
+
+The project is divided into two main parts: **Client** and **Server**.
+
+### 🌐 Client
+- **Components**: Reusable React components used throughout the platform.
+- **Hooks**: Custom React hooks for managing state and effects.
+- **Pages**: Individual pages for different parts of the application, such as the home page, login, signup, practice, contests, etc.
+- **Assets**: Static assets like images and styles.
 
 ```
-# Clone the repository
-git clone https://github.com/username/ecostride.git
+client/
+│── src/
+│   ├── assets/             
+│   ├── Components/         
+│   ├── Hooks/              
+│   ├── Pages/              
+│   ├── App.jsx             
+│   ├── index.jsx           
+│   └── ...                 
+└── ...
+```
+### 🔧 Server
+- **Codes**: Directory where user-submitted code is stored temporarily for execution.
+- **Problems**: Contains JSON files that store coding problems and test cases.
+- **Outputs**: Stores the outputs generated after code execution.
+- **Scripts**: 
+  - `addProblems.js`: Script for adding new problems to the platform.
+  - `executeCodeFile.js`: Executes the user-submitted code against provided test cases.
+  - `generateCodeFile.js`: Generates the code file from the user's input.
 
-# Navigate to the project directory
-cd ecostride
-
-# Install dependencies
-npm install
-
-# Set up the backend
-# Configure the MongoDB connection
-# Set up Firebase Authentication
-
-# Start the development server
-npm start
-
-# Open the application in your browser
-http://localhost:3000
+```
+server/
+│── codes/                 
+│── outputs/                
+│── problems/               
+│   ├── testcases/          
+│   └── problems.json       
+│── executeCodeFile.js      
+│── generateCodeFile.js     
+│── addProblems.js          
+└── ...
 ```
 
-## Contributing 🤝
+## 🚀 Getting Started
 
-We welcome contributions to EcoStride! If you'd like to contribute, please follow these steps:
+### 📋 Prerequisites
+- Node.js
+- MongoDB (for storing user data and problems)
+- Any code editor (e.g., Visual Studio Code)
 
-1. Fork the repository 🍴
-2. Create a new branch: `git checkout -b my-feature-branch`
-3. Make your changes and commit them: `git commit -m 'Add my feature'`
-4. Push to the branch: `git push origin my-feature-branch`
-5. Submit a pull request ⤴️
+### 💻 Installation
 
-## License 📄
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/coderaiders.git
+    ```
 
-EcoStride is released under the [MIT License](https://opensource.org/licenses/MIT).
+2. Navigate to the project directory:
+    ```sh
+    cd coderaiders
+    ```
 
-## Acknowledgments 🙏
+3. Install dependencies for both client and server:
+    ```sh
+    cd Client
+    npm install
+    cd ../Server
+    npm install
+    ```
 
-- [React](https://reactjs.org/) ⚛️
-- [Node.js](https://nodejs.org/) 💚
-- [Express.js](https://expressjs.com/) 🚀
-- [MongoDB](https://www.mongodb.com/) 🍃
-- [Firebase](https://firebase.google.com/) 🔥
+4. Set up your environment variables in the `Server/.env` file:
+    ```env
+    MONGODB_URI=mongodb://localhost:27017/coderaiders
+    ```
 
-EcoStride is an educational project developed by Aditya Kumar, Shubham Sharma, and Stuti Gupta as part of their minor project at Jaypee Institute of Information Technology, Noida. 🏫🎓
+5. Run the development server:
+    ```sh
+    cd Client
+    npm start
+    cd ../Server
+    node index.js
+    ```
 
----
+6. Open the application in your browser:
+    ```
+    http://localhost:3000
+    ```
 
-<div align="center">
-  <h3>Join the Sustainable Revolution with EcoStride! 🌿</h3>
-  <img src="https://github.com/shrivastavaditya/EcoStride-Sustainability-Living-Tracker/blob/main/front/public/images/EcoStride_logo(1).png" alt="EcoStride Banner" width="600">
-</div>
+## 🎯 Usage
+
+- **Coding Playground**: Start coding by navigating to the Playground section.
+- **Coding Arena**: Select a problem to solve or upload a new one.
+- **Coding Battleground**: Join a contest or create your own.
+
+## 🤝 Contributing
+
+We welcome contributions! Please fork this repository, create a new branch, make your changes, and submit a pull request.
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/my-feature`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature/my-feature`.
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+
